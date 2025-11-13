@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Cuenta</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="body-registro">
+    <div class="main-form-container">
+      <h2>Crear Cuenta</h2>
+      <form
+        action="ControladorRegistro"
+        method="POST"
+        class="formulario-registro"
+      >
+        <label for="txtdocumento">Número de Documento (C.C.)</label>
+        <input
+          type="text"
+          id="txtdocumento"
+          name="txtdocumento"
+          placeholder="Documento"
+          required
+        />
+
+        <label for="txtnombre">Nombre</label>
+        <input
+          type="text"
+          id="txtnombre"
+          name="txtnombre"
+          placeholder="Nombre"
+          required
+        />
+
+        <label for="txtapellido">Apellido</label>
+        <input
+          type="text"
+          id="txtapellido"
+          name="txtapellido"
+          placeholder="Apellido"
+          required
+        />
+
+        <label for="txtgenero">Género</label>
+        <select id="txtgenero" name="txtgenero" required>
+          <option value="">Selecciona tu género</option>
+          <option value="M">Masculino</option>
+          <option value="F">Femenino</option>
+          <option value="O">Otro</option>
+        </select>
+
+        <label for="txtcorreo">Correo Electrónico</label>
+        <input
+          type="email"
+          id="txtcorreo"
+          name="txtcorreo"
+          placeholder="Correo Electrónico"
+          required
+        />
+
+        <label for="txttelefono">Teléfono/Celular</label>
+        <input
+          type="tel"
+          id="txttelefono"
+          name="txttelefono"
+          placeholder="Teléfono"
+          required
+        />
+
+        <label for="txtfechaNacimiento">Fecha de Nacimiento</label>
+        <input
+          type="date"
+          id="txtfechaNacimiento"
+          name="txtfechaNacimiento"
+          required
+        />
+
+        <label for="txtdireccion">Dirección de Residencia</label>
+        <input
+          type="text"
+          id="txtdireccion"
+          name="txtdireccion"
+          placeholder="Dirección"
+          required
+        />
+
+        <label for="txtusuario">Usuario</label>
+        <input
+          type="text"
+          id="txtusuario"
+          name="txtusuario"
+          placeholder="Usuario"
+          required
+        />
+
+        <label for="txtpassword">Contraseña</label>
+        <input
+          type="password"
+          id="txtpassword"
+          name="txtpassword"
+          placeholder="Contraseña"
+          required
+        />
+
+        <label for="txtconfirmarPassword">Confirmar Contraseña</label>
+        <input
+          type="password"
+          id="txtconfirmarPassword"
+          name="txtconfirmarPassword"
+          placeholder="Confirmar Contraseña"
+          required
+        />
+
+        <button
+          type="submit"
+          name="accion"
+          value="Registrar"
+          class="btn-entrar"
+        >
+          Registrarse
+        </button>
+
+        <p class="login-links">
+          ¿Ya tienes cuenta?
+          <a href="index.html" class="enlace-inicio-sesion-grande"
+            >Iniciar Sesión</a
+          >
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

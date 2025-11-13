@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="logo-text">PANEL DE ADMINISTRACIÓN</h2>
+      <nav>
+        <a href="index.html" class="btn">Cerrar Sesión</a>
+      </nav>
+    </header>
+
+    <section class="dashboard-content">
+      <div class="gestion-container">
+        <h2>Gestión de Usuario</h2>
+
+        <form action="#" method="POST">
+          <div class="gestion-grid">
+            <div class="campo">
+              <label>ID</label>
+              <input type="text" />
+            </div>
+            <div class="campo">
+              <label>Nombre *</label>
+              <input type="text" />
+            </div>
+
+            <div class="campo">
+              <label>Documento *</label>
+              <input type="text" />
+            </div>
+            <div class="campo">
+              <label>Apellido *</label>
+              <input type="text" />
+            </div>
+
+            <div class="campo">
+              <label>Teléfono *</label>
+              <input type="tel" />
+            </div>
+            <div class="campo">
+              <label>Correo *</label>
+              <input type="email" />
+            </div>
+
+            <div class="campo">
+              <label>Género *</label>
+              <select>
+                <option>Masculino</option>
+                <option>Femenino</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label>Fecha de Nacimiento *</label>
+              <input type="date" />
+            </div>
+
+            <div class="campo">
+              <label>Rol *</label>
+              <input type="text" />
+            </div>
+
+            <div class="campo">
+              <label>Contraseña</label>
+              <input type="password" />
+            </div>
+
+            <div class="botones-crud">
+              <button type="button" class="btn-eliminar">Eliminar</button>
+              <button type="submit" class="btn-actualizar">Actualizar</button>
+              <button type="submit" class="btn-guardar">Guardar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>© 2025 - Café Aroma - Panel de Administración</footer>
+  </body>
+</html>
